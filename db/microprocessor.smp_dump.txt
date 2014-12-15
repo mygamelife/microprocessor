@@ -1,0 +1,14 @@
+
+State Machine - |microprocessor|CU:controlUnit|State
+Name State.halt State.jpos State.jz State.inputs State.sub State.add State.store State.load State.decode State.fetch State.start 
+State.start 0 0 0 0 0 0 0 0 0 0 0 
+State.fetch 0 0 0 0 0 0 0 0 0 1 1 
+State.decode 0 0 0 0 0 0 0 0 1 0 1 
+State.load 0 0 0 0 0 0 0 1 0 0 1 
+State.store 0 0 0 0 0 0 1 0 0 0 1 
+State.add 0 0 0 0 0 1 0 0 0 0 1 
+State.sub 0 0 0 0 1 0 0 0 0 0 1 
+State.inputs 0 0 0 1 0 0 0 0 0 0 1 
+State.jz 0 0 1 0 0 0 0 0 0 0 1 
+State.jpos 0 1 0 0 0 0 0 0 0 0 1 
+State.halt 1 0 0 0 0 0 0 0 0 0 1 
