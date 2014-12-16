@@ -1,0 +1,99 @@
+C:/Users/GE60/Desktop/microprocessor/RAM_8bits_tb.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/RAM_8bits_tb.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module RAM_8bits_tb
+
+Top level modules:
+	RAM_8bits_tb
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/RAM_8bits.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/RAM_8bits.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module RAM_8bits
+
+Top level modules:
+	RAM_8bits
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/microprocessor.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/microprocessor.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module microprocessor
+
+Top level modules:
+	microprocessor
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/GeneralDatapath_tb.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/GeneralDatapath_tb.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module GeneralDatapath_tb
+
+Top level modules:
+	GeneralDatapath_tb
+
+} {} {}} C:/Users/GE60/Desktop/CU/CU_tb.v {1 {vlog -work work C:/Users/GE60/Desktop/CU/CU_tb.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module CU_tb
+
+Top level modules:
+	CU_tb
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/Register_5bits.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/Register_5bits.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module Register_5bits
+
+Top level modules:
+	Register_5bits
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/GeneralDatapath.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/GeneralDatapath.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module GeneralDatapath
+
+Top level modules:
+	GeneralDatapath
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/instructionSetOp.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/instructionSetOp.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module instructionSetOp
+
+Top level modules:
+	instructionSetOp
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/Mux2to1_5bits.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/Mux2to1_5bits.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module Mux2to1_5bits
+
+Top level modules:
+	Mux2to1_5bits
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/Register_8bits.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/Register_8bits.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module Register_8bits
+
+Top level modules:
+	Register_8bits
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/microprocessor_tb.v {1 {vlog -work work {C:\Users\GE60\Desktop\microprocessor\microprocessor_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module microprocessor_tb
+
+Top level modules:
+	microprocessor_tb
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/CU.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/CU.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module CU
+
+Top level modules:
+	CU
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/instructionCycleOp.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/instructionCycleOp.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module instructionCycleOp
+
+Top level modules:
+	instructionCycleOp
+
+} {} {}} C:/Users/GE60/Desktop/microprocessor/Mux4to1_8bits.v {1 {vlog -work work C:/Users/GE60/Desktop/microprocessor/Mux4to1_8bits.v
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module Mux4to1_8bits
+
+Top level modules:
+	Mux4to1_8bits
+
+} {} {}}

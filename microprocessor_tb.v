@@ -2,22 +2,68 @@ module microprocessor_tb;
 
 reg [7:0]data_in;
 reg Enter, Reset, Clock, testStart;
-wire [7:0]dataOut, CheckState;
-
-microprocessor microP(data_in,Enter,Reset,Clock,testStart,dataOut,CheckState,Halt);
+wire [7:0]dataOut;
+wire [3:0]CheckState;
+wire [2:0]IR;
+wire Halt, IRload;
+integer i, X, Y;
+microprocessor microP(data_in,Enter,Reset,Clock,testStart,dataOut,CheckState,IR,Halt,IRload);
 
 initial Clock = 0;
 //Clock pulse generator
-always #10 Clock = ~Clock;
+always #5 Clock = ~Clock;
 
 initial
 begin
 //initialize all inputs
-#0 Reset = 1'b1; testStart = 1'b1;
-//#40 Reset = 1'b0; testStart = 1'b0;
-//#80 data_in = 8'd10; Enter = 1'b1;
-//#120 data_in = 8'd20; Enter = 1'b1;
-//#130 Enter = 1'b0;
-#160 $finish; 
+#0 Reset = 1'b1; testStart = 1'b1; Enter = 1'b1;
+#10 Reset = 1'b0; 
+#10 testStart = 1'b0;
+
+for(i = 0; i< 20 ; i = i + 1)
+begin
+  #10;
+  data_in = $random%256;
+  X = data_in;
+  $display("X %d\n", X);
+  #40;
+  data_in = $random%256;
+  Y = data_in;
+  $display("Y %d\n", Y);
+//#10 data_in = 8'd7; X = data_in;
+//#40 data_in = 8'd15; Y = data_in;
+
+  while(Halt != 1)
+    begin
+      #10;
+    end
+#10 GCD();
+#10 Compare();
+#10 Reset = 1'b1;
+#10 Reset = 1'b0;
 end
+#10 $stop; 
+end
+
+task GCD;
+  begin
+   while(X != Y)
+    begin
+      if(X>Y)
+        X = X-Y;
+      else
+        Y = Y-X;
+    end 
+  end
+endtask
+
+task Compare;
+  begin
+    if(dataOut == X)
+      $display("PASSED X %d, dataOut %d\n", X, dataOut);
+    else
+      $display("Failed X %d, dataOut %d\n", X, dataOut);
+  end
+endtask
+
 endmodule

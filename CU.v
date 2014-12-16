@@ -3,7 +3,7 @@ module CU (IRload, JMPmux, PCload, Meminst,
 			Enter, Reset, Clock, IR, Aeq0, Apos);
 
 input Enter, Clock, Reset, Aeq0, Apos;
-input [7:5]IR;			
+input [2:0]IR;			
 output reg IRload, JMPmux, PCload, Meminst, MemWr, Aload, Sub, Halt;
 output reg [1:0]Asel;
 output [3:0]CheckState; 
@@ -16,9 +16,9 @@ parameter start=4'b0000, fetch=4'b0001, decode=4'b0010, load=4'b1000,
 		  jz=4'b1101, jpos=4'b1110, halt=4'b1111;
 		  
 
-always@(posedge Clock or negedge Reset)
+always@(posedge Clock or posedge Reset)
 begin
-	if(!Reset)
+	if(Reset)
 		State <= start;
 	else
 		State <= NextState;
